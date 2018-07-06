@@ -1,6 +1,6 @@
 Summary: Ceph Luminous packages from the CentOS Storage SIG repository
 Name: centos-release-ceph-luminous
-Version: 1.0
+Version: 1.1
 Release: 1%{?dist}
 License: GPLv2
 URL: http://wiki.centos.org/SpecialInterestGroup/Storage
@@ -27,5 +27,9 @@ install -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/CentOS-Ceph-
 %config(noreplace) %{_sysconfdir}/yum.repos.d/CentOS-Ceph-Luminous.repo
 
 %changelog
+* Fri Jul 06 2018 Brian Stinson <brian@bstinson.com> - 1.1-1
+- Update to use the $contentdir variable to point at centos for x86_64 and
+  altarch for the other arches
+
 * Wed Sep 20 2017 Giulio Fidente <gfidente@fedoraproject.org> - 1.0-1
 - Initial version based on Jewel.
