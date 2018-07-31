@@ -17,13 +17,6 @@ gpgcheck=0
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
 
-[centos-ceph-luminous-debuginfo]
-name=CentOS-$releasever - Ceph Luminous DebugInfo
-baseurl=http://debuginfo.centos.org/$contentdir/$releasever/storage/$basearch/ceph-luminous/
-gpgcheck=0
-enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
-
 [centos-ceph-luminous-source]
 name=CentOS-$releasever - Ceph Luminous Source
 baseurl=http://vault.centos.org/$contentdir/$releasever/storage/Source/ceph-luminous/
