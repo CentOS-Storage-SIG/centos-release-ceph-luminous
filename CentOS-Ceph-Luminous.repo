@@ -1,6 +1,6 @@
 # CentOS-Ceph-Luminous.repo
 #
-# Please see http://wiki.centos.org/SpecialInterestGroup/Storage for more
+# Please see https://wiki.centos.org/SpecialInterestGroup/Storage for more
 # information
 
 [centos-ceph-luminous]
@@ -12,7 +12,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
 
 [centos-ceph-luminous-test]
 name=CentOS-$releasever - Ceph Luminous Testing
-baseurl=http://buildlogs.centos.org/centos/$releasever/storage/$basearch/ceph-luminous/
+baseurl=https://buildlogs.centos.org/centos/$releasever/storage/$basearch/ceph-luminous/
 gpgcheck=0
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
@@ -20,6 +20,6 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
 [centos-ceph-luminous-source]
 name=CentOS-$releasever - Ceph Luminous Source
 baseurl=http://vault.centos.org/$contentdir/$releasever/storage/Source/ceph-luminous/
-gpgcheck=0
+gpgcheck=1
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
