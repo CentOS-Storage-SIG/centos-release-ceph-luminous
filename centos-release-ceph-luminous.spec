@@ -1,7 +1,7 @@
 Summary: Ceph Luminous packages from the CentOS Storage SIG repository
 Name: centos-release-ceph-luminous
 Version: 1.1
-Release: 2%{?dist}
+Release: 3%{?dist}
 License: GPLv2
 URL: http://wiki.centos.org/SpecialInterestGroup/Storage
 Source0: CentOS-Ceph-Luminous.repo
@@ -29,6 +29,10 @@ install -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/CentOS-Ceph-
 %config(noreplace) %{_sysconfdir}/yum.repos.d/CentOS-Ceph-Luminous.repo
 
 %changelog
+* Mon Dec 17 2018 Ken Dreyer <kdreyer@redhat.com> - 1.1-3
+- Use HTTPS for buildlogs.centos.org
+- Enable GPG-checking for centos-ceph-luminous-source
+
 * Tue Jul 31 2018 Niels de Vos <ndevos@redhat.com> - 1.1-2
 - Require centos-release that contains the $contentdir YUM variable
 
