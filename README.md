@@ -16,4 +16,4 @@ Building the package can be done like this:
 
     $ cbs \
            build core7-extras-common-el7.centos \
-           centos-release-ceph-luminous-1.1-2.el7.centos.src.rpm
+           centos-release-ceph-luminous-1.1-3.el7.centos.src.rpm
